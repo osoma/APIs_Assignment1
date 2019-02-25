@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<form action="" method="GET">
+form action="" method="GET">
 		<input type="text" name="number" placeholder="enter a Number ,a Year Or an animal">
 		<br>
 		<select name="value">
@@ -17,5 +17,18 @@
 		</select>
 		<input type="submit" value="search">
 	</form><br>
+<iframe width="959" height="538" src="https://www.youtube.com/embed/<?php if(isset($_SESSION['vid'])){echo $_SESSION['vid'];}else {echo $value;} ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br><br><br>
+	<ul>
+		<?php
+		if(isset($_SESSION['view']))
+		{
+			for($i=0;$i<count($_SESSION['view']->items);$i++)
+			{
+				echo "<li>".$_SESSION['view']->items[$i]->snippet->topLevelComment->snippet->textOriginal."</li>";
+			}
+		}
+			
+		?>
+	</ul>
 </body>
 </html>
