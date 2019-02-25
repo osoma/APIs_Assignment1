@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-form action="" method="GET">
+<form action="" method="GET">
 		<input type="text" name="number" placeholder="enter a Number ,a Year Or an animal">
 		<br>
 		<select name="value">
