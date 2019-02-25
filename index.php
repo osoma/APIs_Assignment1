@@ -1,3 +1,4 @@
+
 <?php
 	session_start();
 	if(isset($_GET['number']))
@@ -50,6 +51,8 @@
 		}
 	}
 ?>
+=======
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -97,3 +100,4 @@
 	</form>
 </body>
 </html>
+
