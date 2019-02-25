@@ -18,9 +18,14 @@
      			$contjson=json_decode($cont);
      			print_r($contjson);
 			}
-			
-			//this for send the value to youtube api
-			
+			if($_GET["value"]=="3")
+			{
+				$number_url ="https://cat-fact.herokuapp.com/facts/random?animal=".$_GET['number']."&amount=1";
+     			$cont=file_get_contents($number_url);
+     			$contjson=json_decode($cont);
+     			print_r($contjson);
+			}
+
 		}
 	}
 ?>
