@@ -30,5 +30,18 @@
 			
 		?>
 	</ul>
+<form action="authorization.php" method="GET">
+		<input type="text" name="comment" placeholder="enter the comment">
+		<input type="submit" name="go" value="Enter Comment">
+		<input type="text" hidden="hidden" name="vid" value="<?php echo $value?>">
+		<input type="text" hidden="hidden" name="cid" value="<?php echo $chanelid?>">
+	</form>
+	<br>
+	<form action="authorization.php" method="GET">
+		<input type="text" name="update" placeholder="write 'delete'">
+		<input type="submit" name="go" value="DELETE">
+		<input type="text" hidden="hidden" name="commentid" value="<?php echo $_SESSION['commentid']?>">
+		
+	</form>
 </body>
 </html>
